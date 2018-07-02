@@ -1,0 +1,32 @@
+@import '../movie-list-template/movie-list-template.wxss';
+.headContainer{
+  display: flex;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  margin-top: 40rpx;
+  margin-bottom: 35rpx;
+  justify-content: space-around
+}
+.moiveContainer{
+  display: flex;
+  justify-content: space-around
+}
+.theaters{
+  color: rgb(104, 104, 104);
+}
+.moreStyle{
+  color: rgb(31, 75, 164);
+  margin-left: 540rpx;
+  margin-right: 10rpx
+}
+.rightStyle {
+  width: 15rpx;
+  height: 20rpx;
+  vertical-align: middle;
+}
+.lineStyle{
+  width: 750rpx;
+  height: 35rpx;
+  background-color: rgb(242,242,242);
+  margin-top: 30rpx;
+}

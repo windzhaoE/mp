@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/movies/movies",
+    "pages/read/read",
+    "pages/readDetail/readDetail",
+    "pages/moviesmore/moviesmore",
+    "pages/moviedetail/moviedetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTitleText": "欢迎页面",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "list": [
+      {
+        "pagePath": "pages/read/read",
+        "text": "阅读",
+        "iconPath":"/images/tab/yuedu.png",
+        "selectedIconPath":"/images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "/images/tab/dianying.png",
+        "selectedIconPath": "/images/tab/dianying_hl.png"
+      }
+    ]
+  }
+}

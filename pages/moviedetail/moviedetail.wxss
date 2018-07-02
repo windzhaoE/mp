@@ -1,0 +1,124 @@
+/* pages/moviedetail/moviedetail.wxss */
+@import 'movie-star-template/movie-star-template.wxss';
+.head{
+  width: 750rpx;
+  height: 320rpx;
+  position: relative;
+  overflow: hidden;
+}
+.bgImg{
+  transform: scale(1.5);
+  filter: blur(7px);
+  position: absolute;
+  top: -60rpx;
+}
+.headContainer{
+  position: absolute;
+  width: 710rpx;
+  height: 320rpx;
+  padding-left: 40rpx;
+  top: 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.title{
+  margin-top: 60rpx;
+  letter-spacing:4rpx;
+  font-size: 40rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 500rpx;
+}
+.address{
+  margin: 50rpx 0;
+  font-size: 26rpx;
+}
+.hot{
+  font-size: 22rpx;
+  color: #615b5d;
+}
+.hot text{
+  color: #f21146;
+}
+.cover{
+  position: absolute;
+  top: 160rpx;
+  right: 30rpx;
+}
+.cover image{
+  width: 170rpx;
+  height: 240rpx;
+}
+.actor{
+  width: 670rpx;
+  padding: 0 40rpx;
+  height: 325rpx;
+  border-bottom: 1px solid #d9d9d9; 
+}
+.original_title{
+  margin: 40rpx 0;
+  color: #666666;
+  font-size: 30rpx;
+  letter-spacing:4rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 400rpx;
+}
+.detail{
+  display: flex;
+  font-size: 22rpx;
+  margin-bottom: 20rpx;
+  align-items: center;
+}
+.detail text:nth-of-type(1){
+  margin-right: 35rpx;
+  color: #d9d9d9;
+}
+.opera{
+  height: 345rpx;
+  padding: 0 40rpx;
+  width: 670rpx;
+  border-bottom: 1px solid #d9d9d9; 
+  font-size: 24rpx;
+}
+.opera_title{
+  margin-top: 50rpx;
+  color: #d9d9d9;
+}
+.opera_container{
+  margin-top: 30rpx;
+  color: #828282;
+  line-height: 40rpx;
+  height: 240rpx;
+  overflow: hidden;
+  position: relative;
+}
+.opera_container::after{content: "..."; position: absolute; bottom: 0; right: 0; padding-left: 40px;
+background: -webkit-linear-gradient(left, transparent, #fff 55%);
+background: -o-linear-gradient(right, transparent, #fff 55%);
+background: -moz-linear-gradient(right, transparent, #fff 55%);
+background: linear-gradient(to right, transparent, #fff 55%);
+}
+.actores{
+  padding: 0 40rpx;
+  width: 670rpx;
+}
+.actores_title{
+  margin: 55rpx 0 45rpx 0;
+  color: #d9d9d9;
+  font-size: 30rpx;
+}
+.actores_img{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  font-size: 30rpx;
+}
+.actores_img image{
+  width: 172rpx;
+  height: 300rpx;
+  flex-shrink:0;
+}

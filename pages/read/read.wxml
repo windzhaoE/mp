@@ -1,0 +1,18 @@
+<view>
+   <import src="../read-item-template/read-item-template.wxml" />  
+  <swiper autoplay='{{true}}' class='{{ swiperClass }}' indicator-dots='{{true}}' vertical='{{false}}'>
+    <block wx:for="{{urlArr}}" wx:for-index='k' wx:for-item='v' wx:key="{{index}}">
+      <!--默认索引 是index；默认的值是item  -->
+      <swiper-item>
+        <image src="{{v}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+   <view class='lineStyle'></view>
+  <block wx:for="{{postList}}" wx:key="{{index}}">
+    <view catchtap='showDetail' data-postid='{{item.id}}'>
+      <template is="readItem" data="{{...item}}" />
+    </view>
+  </block>
+</view>

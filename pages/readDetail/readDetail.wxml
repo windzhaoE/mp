@@ -1,0 +1,15 @@
+<view class='detailPage'>
+  <image src="{{isPlay?'../../images/music/music-stop.png':'../../images/music/music-start.png'}}" catchtap='playMusic' class='musicOn'></image>
+  <image src='{{contentImg}}' class='detailImg'></image>
+  <view class='peopleStyle'>
+    <image src='{{headImg}}' class='headImg'></image> <text>知乎  </text><text class='mytext2'>发表于 {{addtime}}</text>
+  </view>
+  <text class='mytext'>{{title}}</text>
+  <view class='lineStyle'>
+    <image src="{{isCollection?'../../images/icon/collection.png':'../../images/icon/collection-anti.png'}}" class='collectionStyle' catchtap='collectionAction'></image>
+    <image src='../../images/icon/share.png' class='shareStyle' catchtap='showActionSheet' ></image>
+  </view>
+  <view class='textdetail'>
+    <text>{{content}}</text>
+  </view>
+</view>

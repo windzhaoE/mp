@@ -1,0 +1,38 @@
+<!--pages/moviedetail/moviedetail.wxml-->
+<view>
+  <view class='head'>
+    <image src='{{images.large}}' class='bgImg'></image>
+    <view class='headContainer'>
+      <view class='title'>{{title}}</view>
+      <view class='address'>{{countries[0]}} . {{year}}</view>
+      <view class='hot'><text>{{wish_count}}</text> 人喜欢 <text> {{comments_count}}</text> 条评论</view>
+    </view>
+  </view>
+  <view class='cover'><image src='{{images.large}}'></image></view>
+  <view class='actor'>
+  
+    <import src="movie-star-template/movie-star-template.wxml" />
+    <view class='original_title'>{{original_title}}</view>
+     <view class='detail'><text style='margin-bottom:-20rpx;'>评分</text><template is="star" data="{{starArr,rating}}" /></view> 
+
+     <view class='detail'><text>导演</text><text>{{directors[0].name}}</text></view> 
+     <view class='detail'><text>影人</text><text wx:for='{{casts}}' wx:key='{{index}}'>{{item.name}}/</text></view>
+     <view class='detail'><text>类型</text><text wx:for='{{genres}}' wx:key='{{index}}'>{{item}}、</text></view> 
+  </view>
+  <view class='opera'>
+    <view class='opera_title'>剧情简介</view>
+    <view class='opera_container'>
+      {{summary}}
+    </view>
+  </view>
+  <view class='actores'>
+    <view class='actores_title'>影人</view>
+    <view class='actores_img'>
+      <view wx:for='{{casts}}' wx:key='{{index}}'>
+        <image src='{{item.avatars.large}}'></image>
+        <view style='text-align:center'>{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+

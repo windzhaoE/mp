@@ -1,0 +1,8 @@
+<template name="movieList">
+  <view class='listContainer' catchtap='toDetail' data-movieid='{{id}}' data-type='{{type}}' data-input='{{input}}'>
+  <import src="../movie-star-template/movie-star-template.wxml" />
+    <image src='{{images.large}}' class='myimg'></image>
+    <text class='mytitle'>{{title}}</text>
+      <template is="star" data="{{starArr,rating}}" />
+  </view>
+</template>

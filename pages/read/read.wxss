@@ -1,0 +1,13 @@
+@import '../read-item-template/read-item-template.wxss';
+.slide-image{
+  width: 750rpx;
+  height: 580rpx;
+}
+.swiperContainer{
+  height: 580rpx;
+}
+.lineStyle{
+  height: 20rpx;
+  background: rgb(248, 248, 248);
+  border-bottom: 1px solid rgb(237, 237, 237);
+}

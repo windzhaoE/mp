@@ -1,0 +1,7 @@
+<template name="star">
+<view class='starContainer'>
+  <image wx:for="{{starArr}}" wx:key="{{index}}"  src="{{item?'/images/icon/star.png':'/images/icon/none-star.png'}}">
+  </image>
+    <text class='mytext'>{{rating.average}}</text>
+</view>
+</template>

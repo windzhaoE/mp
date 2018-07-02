@@ -1,0 +1,17 @@
+<template name="movieGrid">
+  <view>
+    <import src="../movie-list-template/movie-list-template.wxml" />
+    <view class='headContainer'>
+      <text class='theaters'>{{type}}</text>
+      <text class='moreStyle' catchtap='goMore' data-type='{{type}}'>更多</text>
+      <image class='rightStyle' src='/images/icon/arrow-right.png'></image>
+    </view>
+    <view class='moiveContainer'>
+      <view wx:for='{{subjects}}' wx:key='{{index}}'>
+        <template is="movieList" data="{{...item}}" />
+      </view>
+    </view>
+
+  </view>
+  <view class='lineStyle'></view>
+</template>

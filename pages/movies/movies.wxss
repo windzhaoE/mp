@@ -1,0 +1,25 @@
+/* pages/movies/movies.wxss */
+@import "movie-grid-template/movie-grid-template.wxss";
+.myinp{
+  background: rgb(242,242,242);
+  height: 80rpx;
+  width: 400rpx;
+}
+.myph{
+  font-size: 28rpx;
+  color: rgb(216,216,216);
+  background: rgb(242,242,242);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.search{
+  width: 40rpx;
+  height: 40rpx;
+}
+.searchContainer{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

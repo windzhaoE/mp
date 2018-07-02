@@ -1,0 +1,18 @@
+<template name="readItem">
+  <view class='readContainer'>
+    <view class='upStyle'>
+      <image src='{{headImg}}' class='headImg'></image>
+      <text class='timeStyle'>{{addtime}}</text>
+    </view>
+    <text class='titleStyle'>{{title}}</text>
+    <image src='{{contentImg}}' class='contentImg'></image>
+    <text class='textContent'>{{ content }}</text>
+    <view class='ratingStyle'>
+      <image src='/images/icon/chat1.png' class='iconStyle'></image>
+      <text>{{read}}</text>
+      <image src='/images/icon/view.png' class='iconStyle'></image>
+      <text>{{look}}</text>
+    </view>
+    <view class='whiteStyle'></view>
+  </view>
+</template>

@@ -1,0 +1,9 @@
+/* pages/moviesmore/moviesmore.wxss */
+@import 'movie-list-template/movie-list-template.wxss';
+.morePage{
+  padding: 30rpx 0;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  align-content: space-around
+}

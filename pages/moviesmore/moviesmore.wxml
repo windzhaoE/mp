@@ -1,0 +1,7 @@
+<!--pages/moviesmore/moviesmore.wxml-->
+<import src='movie-list-template/movie-list-template.wxml'/>
+<view class='morePage'>
+  <view wx:for='{{result}}' wx:key='{{index}}'>
+    <template is='movieList' data='{{...item}}' />
+  </view>
+</view>

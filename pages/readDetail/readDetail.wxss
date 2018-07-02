@@ -1,0 +1,66 @@
+.detailPage{
+  display: flex;
+  flex-direction: column;
+}
+.detailImg{
+  width: 750rpx;
+  height: 450rpx;
+}
+.headImg{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  vertical-align: middle;
+}
+.peopleStyle{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  color: rgb(160, 160, 160);
+}
+.mytext2{
+  
+  font-size: 30rpx;
+}
+.mytext{
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  color: rgb(75, 85, 108);
+}
+.lineStyle{
+  height: 1px;
+  width: 750rpx;
+  background: rgb(229, 229, 229);
+  margin-top: 70rpx;
+  position: relative;
+}
+.collectionStyle{
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  right: 200rpx;
+  top: -45rpx;
+}
+.shareStyle{
+  width: 90rpx;
+  height: 90rpx;
+  right: 80rpx;
+  top: -45rpx;
+  position: absolute;
+}
+.textdetail{
+  margin-top: 75rpx;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  color: rgb(182, 182, 182);
+  font-size: 30rpx;
+  letter-spacing: 2px;
+}
+.musicOn{
+  position: absolute;
+  width: 110rpx;
+  height: 110rpx;
+  left: 320rpx;
+  top: 160rpx;
+}
